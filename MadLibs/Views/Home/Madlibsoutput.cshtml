@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>A Postcard For You!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    span {font-weight: bold;}
+  </style>
+</head>
+
+<body>
+<div class = "container">
+  <h1>MadLibs!</h1>
+  <p>Today I went to the zoo. I saw a
+  <span >@Model.Adjective 
+  @Model.Noun</span> jumping up and down in its tree.
+  He <span >@Model.Verb @Model.Adverb</span>
+  through the large tunnel that led to its <span >@Model.Adjective1 
+  @Model.Noun1</span>. I got some peanuts and passed
+  them through the cage to a gigantic gray <span >@Model.Noun2</span>
+  towering above my head. Feeding that animal made
+  me hungry. I went to get a <span >@Model.Adjective2</span> scoop
+  of ice cream. It filled my stomach. Afterwards I had to
+  <span >@Model.Verb1
+  @Model.Adverb1</span> to catch our bus.
+  When I got home I <span >@Model.Verb2</span> my
+  mom for a <span >@Model.Adjective3</span> day at the zoo.</p>
+  </div>
+
+  
+
+
+  @* Today I went to the zoo. I saw a(n)
+  ___________(adjective)
+  _____________(Noun) jumping up and down in its tree.
+  He _____________(verb, past tense) __________(adverb)
+  through the large tunnel that led to its _______(adjective)
+  __________(noun). I got some peanuts and passed
+  them through the cage to a gigantic gray _______(noun)
+  towering above my head. Feeding that animal made
+  me hungry. I went to get a __________(adjective) scoop
+  of ice cream. It filled my stomach. Afterwards I had to
+  __________(verb) __________ (adverb) to catch our bus.
+  When I got home I __________(verb, past tense) my
+  mom for a __________(adjective) day at the zoo. *@
+
+
+
+
+
+  <!-- @* <p>Dear @Model.Recipient,</p>
+    <p>Travel Enthusiast @Model.Sender</p> *@ -->
+</body>
+
+</html>

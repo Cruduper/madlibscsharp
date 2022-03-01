@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>A Postcard For You!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <style>
+    body {background-color: #FFAAAA;}
+    h1   {color: BLACK;}
+    p    {color: WHITE;}
+    span {font-weight: bold;}
+  </style>
+</head>
+
+<body>
+<div class = "container">
+  <h1>MadLibs!</h1>
+  <p>Today I went to the park. I saw a
+  <span >@Model.Adjective 
+  @Model.Noun</span> bouncing all around its cage.
+  He <span >@Model.Verb</span> so hard he broke the cage.</p>
+  </div>
+
+  
+
+
+
+
+  <!-- @* <p>Dear @Model.Recipient,</p>
+    <p>Travel Enthusiast @Model.Sender</p> *@ -->
+</body>
+
+</html>
